@@ -1,0 +1,8 @@
+{
+  "name": "idempiere-table-creator",
+  "version": "1.0.0",
+  "description": "Creates iDempiere 12 database tables from existing business forms (Word/Excel) — generates SQL DDL and AD_Element Application Dictionary entries",
+  "author": {
+    "name": "Ray"
+  }
+}
