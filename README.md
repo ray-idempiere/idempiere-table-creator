@@ -7,7 +7,8 @@ A Claude Code skill that converts free-format business forms (Word / Excel) into
 ## Installation
 
 ```bash
-claude plugins add ray-idempiere/idempiere-table-creator
+claude plugins marketplace add ray-idempiere/ray-idempiere-plugins
+claude plugins install idempiere-table-creator@ray-idempiere-plugins
 ```
 
 That's it. The `/create-table` command is available immediately in any Claude Code session.
