@@ -1,7 +1,8 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ray-idempiere-plugins",
-  "description": "iDempiere 12 development skills for Claude Code",
+  "metadata": {
+    "description": "iDempiere 12 development skills for Claude Code"
+  },
   "owner": {
     "name": "Ray"
   },
@@ -9,7 +10,7 @@
     {
       "name": "idempiere-table-creator",
       "description": "Creates iDempiere 12 database tables from existing business forms (Word/Excel) — generates SQL DDL and AD_Element Application Dictionary entries",
-      "source": ".",
+      "source": "./plugins/idempiere-table-creator",
       "category": "development"
     }
   ]
