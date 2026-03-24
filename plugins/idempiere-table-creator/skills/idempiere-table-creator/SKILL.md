@@ -14,7 +14,7 @@ Convert any business form (Word or Excel, any layout) into iDempiere 12 SQL DDL 
 ## Invocation
 
 ```
-/create-table <file-path>
+/idempiere-table-creator <file-path>
 ```
 
 Accepts: `.doc`, `.docx`, `.xlsx`

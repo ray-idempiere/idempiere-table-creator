@@ -17,7 +17,7 @@ That's it. The `/create-table` command is available immediately in any Claude Co
 ## Usage
 
 ```
-/create-table <file-path>
+/idempiere-table-creator <file-path>
 ```
 
 **Supported formats:** `.doc`, `.docx`, `.xlsx`
@@ -26,7 +26,7 @@ That's it. The `/create-table` command is available immediately in any Claude Co
 ### Example
 
 ```
-/create-table /Users/ray/Documents/QR-HR-01 員工資料卡.docx
+/idempiere-table-creator /Users/ray/Documents/QR-HR-01 員工資料卡.docx
 ```
 
 ---
