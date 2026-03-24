@@ -1,6 +1,6 @@
 ---
 name: idempiere-table-creator
-description: Use when creating iDempiere 12 database tables from existing business forms — invoked via /create-table with a .doc, .docx, or .xlsx file path; also triggers when user says "幫我建 iDempiere table", "generate table from form", or "convert form to SQL"
+description: Use when creating iDempiere 12 database tables from existing business forms — invoked via /idempiere-table-creator with a .doc, .docx, or .xlsx file path; also triggers when user says "幫我建 iDempiere table", "generate table from form", or "convert form to SQL"
 ---
 
 # iDempiere Table Creator
