@@ -75,7 +75,15 @@ Created          TIMESTAMP      NOT NULL DEFAULT NOW(),
 CreatedBy        NUMERIC(10,0)  NOT NULL,
 Updated          TIMESTAMP      NOT NULL DEFAULT NOW(),
 UpdatedBy        NUMERIC(10,0)  NOT NULL,
+<TableName>_UU   VARCHAR(36),
 ```
+
+The `_UU` column is the UUID column (see `c_order_uu` in C_Order as reference). Rules:
+- Type: `VARCHAR(36)` (not CHAR)
+- Add a UNIQUE constraint: `CONSTRAINT <TableName>_UU_IDX UNIQUE (<TableName>_UU)`
+- It is unique per table, so always generate a new AD_Element INSERT for it
+- Use the column name itself as both Name and PrintName (e.g., `HR_EmployeeCard_UU`)
+- zh_TW row: IsTranslated='N', Name/PrintName same as English
 
 Primary key constraint:
 ```sql

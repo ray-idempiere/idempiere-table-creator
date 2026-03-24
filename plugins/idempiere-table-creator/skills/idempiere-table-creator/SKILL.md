@@ -100,8 +100,10 @@ CREATE TABLE <TableName> (
     CreatedBy        NUMERIC(10,0)  NOT NULL,
     Updated          TIMESTAMP      NOT NULL DEFAULT NOW(),
     UpdatedBy        NUMERIC(10,0)  NOT NULL,
+    <TableName>_UU   VARCHAR(36),
     -- [insert confirmed user columns here, one per line]
-    CONSTRAINT <TableName>_PK PRIMARY KEY (<TableName>_ID)
+    CONSTRAINT <TableName>_PK PRIMARY KEY (<TableName>_ID),
+    CONSTRAINT <TableName>_UU_IDX UNIQUE (<TableName>_UU)
 );
 ```
 
